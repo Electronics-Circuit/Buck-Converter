@@ -1,0 +1,20 @@
+# Asynchronous Buck Converter
+
+An asynchronous buck converter is the simplest type of buck converter. It uses one switch (usually a MOSFET) and one diode.
+
+When the switch turns ON, current flows from the input to the inductor and the load. The inductor stores energy and the output voltage rises.
+
+When the switch turns OFF, the current cannot stop instantly, so it continues to flow through the diode to the load. The inductor releases its stored energy and keeps the output voltage stable.
+
+The diode is the key difference here. Instead of using another controlled switch, it just provides a path for current when the main switch is OFF.
+
+Because of the diode:
+
+Some power is lost (due to diode voltage drop)
+Efficiency is lower compared to synchronous buck
+
+But:
+
+Circuit is simple
+Easy to design
+Good for low-cost and low-power applications
